@@ -4,7 +4,6 @@
   padding:0;
   outline: 0;
   box-sizing: border-box;
-  list-style: none;
   text-decoration: none;
   font-family: sans-serif;
 }
@@ -33,7 +32,7 @@ body{
 
 }
 .app{
-  height: 100vh;
+  min-height: 100vh;
   overflow-y:scroll;
   background-color:#0f0e13;
   background-image: 
@@ -103,15 +102,17 @@ nav a.active{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
+
 .me{
-  background: linear-gradient(blue,transparent) ;
+  background: linear-gradient(var(--color-bg-variant),transparent) ;
   width: 30rem;
   height: 30rem;
   position: absolute;
   left: calc(50% - 15rem);
-  margin-top: 4rem;
+  margin-top: 6rem;
   border-radius: 12rem 12rem 0 0; 
   overflow: hidden; 
   padding: 5rem 1.5rem 1.5rem 1.5rem;  
@@ -210,7 +211,7 @@ nav a.active{
 }
 
 
-     /* PORTFOLIO */
+/* PORTFOLIO */
      .portifolio__container{
       display:grid;
       grid-template-columns: repeat(3,1fr);
@@ -232,9 +233,9 @@ nav a.active{
       border-radius: 1.5rem;
       overflow: hidden;
   }
-  .portifolio__item-image img{
-     height: 18rem;
-     
+  .portifolio__item-image img,iframe{
+     height: 18rem;   
+     width: 18rem;  
   }
   .portifolio__item h3{
       margin: 1.2rem 0 2rem;
