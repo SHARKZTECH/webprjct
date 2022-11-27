@@ -118,6 +118,13 @@ nav a.active{
   padding: 5rem 1.5rem 1.5rem 1.5rem;  
 }
 
+@media screen and (max-width:600px) {
+  .me{
+   width: 24rem;
+   left: calc(50% - 12rem);
+  }
+
+}
 
 /* ABOUT */
 .about__container{
