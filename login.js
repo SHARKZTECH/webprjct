@@ -30,7 +30,7 @@
     	    	error.classList.remove("hidde");
 		        error.innerHTML="Fill all fields";
 
-    	    } else if(name.value=="sharkz" && password.value=="1234"){
+    	    } else if(name.value=="Ann" && password.value=="1234"){
     			 error.classList.remove("hidde");
 		        error.innerHTML="login succefull";
 		        window.location="home.html";
